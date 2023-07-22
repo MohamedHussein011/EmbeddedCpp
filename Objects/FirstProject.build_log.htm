@@ -1,0 +1,721 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mohamed Hussein, Embedded, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\Full Diploma - IMT\Embedded C++\Github\EmbeddedCpp\FirstProject.uvprojx
+Project File Date:  07/18/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32F103C8'
+main.cpp(1): warning: In file included from...
+./Rcc.h(4): warning: In file included from...
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+main.cpp(1): warning: In file included from...
+./Rcc.h(67): warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+        Rcc_Dac,
+               ^
+./Rcc.h(28): warning: element 'Rcc_Gpioc' has been implicitly assigned 4 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpioc,
+        ^~~~~~~~~
+./Rcc.h(19): note: element 'Rcc_Flitf' also has value 4
+        Rcc_Flitf=4,
+        ^~~~~~~~~~~
+./Rcc.h(49): note: element 'Rcc_Tim6' also has value 4
+        Rcc_Tim6,
+        ^~~~~~~~
+./Rcc.h(30): warning: element 'Rcc_Gpioe' has been implicitly assigned 6 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpioe,
+        ^~~~~~~~~
+./Rcc.h(20): note: element 'Rcc_Crc' also has value 6
+        Rcc_Crc=6,
+        ^~~~~~~~~
+./Rcc.h(51): note: element 'Rcc_Tim12' also has value 6
+        Rcc_Tim12,
+        ^~~~~~~~~
+./Rcc.h(32): warning: element 'Rcc_Gpiog' has been implicitly assigned 8 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiog,
+        ^~~~~~~~~
+./Rcc.h(21): note: element 'Rcc_Fsmc' also has value 8
+        Rcc_Fsmc=8,
+        ^~~~~~~~~~
+./Rcc.h(53): note: element 'Rcc_Tim14' also has value 8
+        Rcc_Tim14,
+        ^~~~~~~~~
+./Rcc.h(34): warning: element 'Rcc_Adc2' has been implicitly assigned 10 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Adc2,
+        ^~~~~~~~
+./Rcc.h(22): note: element 'Rcc_Sdio' also has value 10
+        Rcc_Sdio=10,
+        ^~~~~~~~~~~
+./Rcc.h(16): warning: element 'Rcc_Dma1' has been implicitly assigned 0 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Dma1,
+        ^~~~~~~~
+./Rcc.h(25): note: element 'Rcc_Afio' also has value 0
+        Rcc_Afio=0,
+        ^~~~~~~~~~
+./Rcc.h(45): note: element 'Rcc_Tim2' also has value 0
+        Rcc_Tim2=0,
+        ^~~~~~~~~~
+./Rcc.h(18): warning: element 'Rcc_Sram' has been implicitly assigned 2 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Sram,
+        ^~~~~~~~
+./Rcc.h(26): note: element 'Rcc_Gpioa' also has value 2
+        Rcc_Gpioa=2,
+        ^~~~~~~~~~~
+./Rcc.h(47): note: element 'Rcc_Tim4' also has value 2
+        Rcc_Tim4,
+        ^~~~~~~~
+./Rcc.h(59): warning: element 'Rcc_Usart4' has been implicitly assigned 19 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Usart4,
+        ^~~~~~~~~~
+./Rcc.h(40): note: element 'Rcc_Tim9' also has value 19
+        Rcc_Tim9=19,
+        ^~~~~~~~~~~
+./Rcc.h(17): warning: element 'Rcc_Dma2' has been implicitly assigned 1 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Dma2,
+        ^~~~~~~~
+./Rcc.h(46): note: element 'Rcc_Tim3' also has value 1
+        Rcc_Tim3,
+        ^~~~~~~~
+./Rcc.h(27): warning: element 'Rcc_Gpiob' has been implicitly assigned 3 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiob,
+        ^~~~~~~~~
+./Rcc.h(48): note: element 'Rcc_Tim5' also has value 3
+        Rcc_Tim5,
+        ^~~~~~~~
+./Rcc.h(29): warning: element 'Rcc_Gpiod' has been implicitly assigned 5 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiod,
+        ^~~~~~~~~
+./Rcc.h(50): note: element 'Rcc_Tim7' also has value 5
+        Rcc_Tim7,
+        ^~~~~~~~
+./Rcc.h(31): warning: element 'Rcc_Gpiof' has been implicitly assigned 7 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiof,
+        ^~~~~~~~~
+./Rcc.h(52): note: element 'Rcc_Tim13' also has value 7
+        Rcc_Tim13,
+        ^~~~~~~~~
+./Rcc.h(35): warning: element 'Rcc_Tim1' has been implicitly assigned 11 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Tim1,
+        ^~~~~~~~
+./Rcc.h(54): note: element 'Rcc_Wwd' also has value 11
+        Rcc_Wwd=11,
+        ^~~~~~~~~~
+./Rcc.h(38): warning: element 'Rcc_Usart1' has been implicitly assigned 14 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Usart1,
+        ^~~~~~~~~~
+./Rcc.h(55): note: element 'Rcc_Spi2' also has value 14
+        Rcc_Spi2=14,
+        ^~~~~~~~~~~
+./Rcc.h(39): warning: element 'Rcc_Adc3' has been implicitly assigned 15 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Adc3,
+        ^~~~~~~~
+./Rcc.h(56): note: element 'Rcc_Spi3' also has value 15
+        Rcc_Spi3,
+        ^~~~~~~~
+./Rcc.h(41): warning: element 'Rcc_Tim10' has been implicitly assigned 20 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Tim10,
+        ^~~~~~~~~
+./Rcc.h(60): note: element 'Rcc_Usart5' also has value 20
+        Rcc_Usart5,
+        ^~~~~~~~~~
+./Rcc.h(42): warning: element 'Rcc_Tim11' has been implicitly assigned 21 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Tim11,
+        ^~~~~~~~~
+./Rcc.h(61): note: element 'Rcc_I2c1' also has value 21
+        Rcc_I2c1,
+        ^~~~~~~~
+./Rcc.h(90): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.cpp(11): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+22 warnings generated.
+compiling main.cpp...
+Rcc.cpp(1): warning: In file included from...
+./Rcc.h(4): warning: In file included from...
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+Rcc.cpp(1): warning: In file included from...
+./Rcc.h(67): warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+        Rcc_Dac,
+               ^
+./Rcc.h(28): warning: element 'Rcc_Gpioc' has been implicitly assigned 4 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpioc,
+        ^~~~~~~~~
+./Rcc.h(19): note: element 'Rcc_Flitf' also has value 4
+        Rcc_Flitf=4,
+        ^~~~~~~~~~~
+./Rcc.h(49): note: element 'Rcc_Tim6' also has value 4
+        Rcc_Tim6,
+        ^~~~~~~~
+./Rcc.h(30): warning: element 'Rcc_Gpioe' has been implicitly assigned 6 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpioe,
+        ^~~~~~~~~
+./Rcc.h(20): note: element 'Rcc_Crc' also has value 6
+        Rcc_Crc=6,
+        ^~~~~~~~~
+./Rcc.h(51): note: element 'Rcc_Tim12' also has value 6
+        Rcc_Tim12,
+        ^~~~~~~~~
+./Rcc.h(32): warning: element 'Rcc_Gpiog' has been implicitly assigned 8 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiog,
+        ^~~~~~~~~
+./Rcc.h(21): note: element 'Rcc_Fsmc' also has value 8
+        Rcc_Fsmc=8,
+        ^~~~~~~~~~
+./Rcc.h(53): note: element 'Rcc_Tim14' also has value 8
+        Rcc_Tim14,
+        ^~~~~~~~~
+./Rcc.h(34): warning: element 'Rcc_Adc2' has been implicitly assigned 10 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Adc2,
+        ^~~~~~~~
+./Rcc.h(22): note: element 'Rcc_Sdio' also has value 10
+        Rcc_Sdio=10,
+        ^~~~~~~~~~~
+./Rcc.h(16): warning: element 'Rcc_Dma1' has been implicitly assigned 0 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Dma1,
+        ^~~~~~~~
+./Rcc.h(25): note: element 'Rcc_Afio' also has value 0
+        Rcc_Afio=0,
+        ^~~~~~~~~~
+./Rcc.h(45): note: element 'Rcc_Tim2' also has value 0
+        Rcc_Tim2=0,
+        ^~~~~~~~~~
+./Rcc.h(18): warning: element 'Rcc_Sram' has been implicitly assigned 2 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Sram,
+        ^~~~~~~~
+./Rcc.h(26): note: element 'Rcc_Gpioa' also has value 2
+        Rcc_Gpioa=2,
+        ^~~~~~~~~~~
+./Rcc.h(47): note: element 'Rcc_Tim4' also has value 2
+        Rcc_Tim4,
+        ^~~~~~~~
+./Rcc.h(59): warning: element 'Rcc_Usart4' has been implicitly assigned 19 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Usart4,
+        ^~~~~~~~~~
+./Rcc.h(40): note: element 'Rcc_Tim9' also has value 19
+        Rcc_Tim9=19,
+        ^~~~~~~~~~~
+./Rcc.h(17): warning: element 'Rcc_Dma2' has been implicitly assigned 1 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Dma2,
+        ^~~~~~~~
+./Rcc.h(46): note: element 'Rcc_Tim3' also has value 1
+        Rcc_Tim3,
+        ^~~~~~~~
+./Rcc.h(27): warning: element 'Rcc_Gpiob' has been implicitly assigned 3 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiob,
+        ^~~~~~~~~
+./Rcc.h(48): note: element 'Rcc_Tim5' also has value 3
+        Rcc_Tim5,
+        ^~~~~~~~
+./Rcc.h(29): warning: element 'Rcc_Gpiod' has been implicitly assigned 5 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiod,
+        ^~~~~~~~~
+./Rcc.h(50): note: element 'Rcc_Tim7' also has value 5
+        Rcc_Tim7,
+        ^~~~~~~~
+./Rcc.h(31): warning: element 'Rcc_Gpiof' has been implicitly assigned 7 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Gpiof,
+        ^~~~~~~~~
+./Rcc.h(52): note: element 'Rcc_Tim13' also has value 7
+        Rcc_Tim13,
+        ^~~~~~~~~
+./Rcc.h(35): warning: element 'Rcc_Tim1' has been implicitly assigned 11 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Tim1,
+        ^~~~~~~~
+./Rcc.h(54): note: element 'Rcc_Wwd' also has value 11
+        Rcc_Wwd=11,
+        ^~~~~~~~~~
+./Rcc.h(38): warning: element 'Rcc_Usart1' has been implicitly assigned 14 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Usart1,
+        ^~~~~~~~~~
+./Rcc.h(55): note: element 'Rcc_Spi2' also has value 14
+        Rcc_Spi2=14,
+        ^~~~~~~~~~~
+./Rcc.h(39): warning: element 'Rcc_Adc3' has been implicitly assigned 15 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Adc3,
+        ^~~~~~~~
+./Rcc.h(56): note: element 'Rcc_Spi3' also has value 15
+        Rcc_Spi3,
+        ^~~~~~~~
+./Rcc.h(41): warning: element 'Rcc_Tim10' has been implicitly assigned 20 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Tim10,
+        ^~~~~~~~~
+./Rcc.h(60): note: element 'Rcc_Usart5' also has value 20
+        Rcc_Usart5,
+        ^~~~~~~~~~
+./Rcc.h(42): warning: element 'Rcc_Tim11' has been implicitly assigned 21 which another element has been assigned [-Wduplicate-enum]
+        Rcc_Tim11,
+        ^~~~~~~~~
+./Rcc.h(61): note: element 'Rcc_I2c1' also has value 21
+        Rcc_I2c1,
+        ^~~~~~~~
+./Rcc.h(90): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+Rcc.cpp(3): warning: use of old-style cast [-Wold-style-cast]
+RCC_TypeDef* Rcc_MemoryBase = (RCC_TypeDef*) RCC_BASE;
+                                             ^~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(1360): note: expanded from macro 'RCC_BASE'
+#define RCC_BASE              (AHBPERIPH_BASE + 0x1000)
+                               ^~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(1292): note: expanded from macro 'AHBPERIPH_BASE'
+#define AHBPERIPH_BASE        (PERIPH_BASE + 0x20000)
+                               ^~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(1282): note: expanded from macro 'PERIPH_BASE'
+#define PERIPH_BASE           ((uint32_t)0x40000000) /*!< Peripheral base address in the alias region */
+                               ^         ~~~~~~~~~~
+Rcc.cpp(3): warning: use of old-style cast [-Wold-style-cast]
+RCC_TypeDef* Rcc_MemoryBase = (RCC_TypeDef*) RCC_BASE;
+                              ^              ~~~~~~~~
+Rcc.cpp(3): warning: no previous extern declaration for non-static variable 'Rcc_MemoryBase' [-Wmissing-variable-declarations]
+RCC_TypeDef* Rcc_MemoryBase = (RCC_TypeDef*) RCC_BASE;
+             ^
+Rcc.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+RCC_TypeDef* Rcc_MemoryBase = (RCC_TypeDef*) RCC_BASE;
+^
+Rcc.cpp(18): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Dma1: Rcc_MemoryBase->AHBENR |= RCC_AHBENR_DMA1EN;             Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2027): note: expanded from macro 'RCC_AHBENR_DMA1EN'
+#define  RCC_AHBENR_DMA1EN                   ((uint16_t)0x0001)            /*!< DMA1 clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(19): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Sram: Rcc_MemoryBase->AHBENR |= RCC_AHBENR_SRAMEN;             Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2028): note: expanded from macro 'RCC_AHBENR_SRAMEN'
+#define  RCC_AHBENR_SRAMEN                   ((uint16_t)0x0004)            /*!< SRAM interface clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(20): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Flitf: Rcc_MemoryBase->AHBENR |= RCC_AHBENR_FLITFEN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2029): note: expanded from macro 'RCC_AHBENR_FLITFEN'
+#define  RCC_AHBENR_FLITFEN                  ((uint16_t)0x0010)            /*!< FLITF clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(21): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Crc: Rcc_MemoryBase->AHBENR |= RCC_AHBENR_CRCEN;               Error = Rcc_Ok;  break;
+                                                                ^~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2030): note: expanded from macro 'RCC_AHBENR_CRCEN'
+#define  RCC_AHBENR_CRCEN                    ((uint16_t)0x0040)            /*!< CRC clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(16): warning: 23 enumeration values not explicitly handled in switch: 'Rcc_Dma2', 'Rcc_Gpiob', 'Rcc_Gpiod'... [-Wswitch-enum]
+                switch(Peripheral)
+                       ^~~~~~~~~~
+Rcc.cpp(30): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Afio: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_AFIOEN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2053): note: expanded from macro 'RCC_APB2ENR_AFIOEN'
+#define  RCC_APB2ENR_AFIOEN                  ((uint32_t)0x00000001)         /*!< Alternate Function I/O clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(31): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpioa: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_IOPAEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2054): note: expanded from macro 'RCC_APB2ENR_IOPAEN'
+#define  RCC_APB2ENR_IOPAEN                  ((uint32_t)0x00000004)         /*!< I/O port A clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(32): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpiob: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_IOPBEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2055): note: expanded from macro 'RCC_APB2ENR_IOPBEN'
+#define  RCC_APB2ENR_IOPBEN                  ((uint32_t)0x00000008)         /*!< I/O port B clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(33): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpioc: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_IOPCEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2056): note: expanded from macro 'RCC_APB2ENR_IOPCEN'
+#define  RCC_APB2ENR_IOPCEN                  ((uint32_t)0x00000010)         /*!< I/O port C clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(34): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpiod: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_IOPDEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2057): note: expanded from macro 'RCC_APB2ENR_IOPDEN'
+#define  RCC_APB2ENR_IOPDEN                  ((uint32_t)0x00000020)         /*!< I/O port D clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(35): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpioe: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_IOPEEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2075): note: expanded from macro 'RCC_APB2ENR_IOPEEN'
+ #define  RCC_APB2ENR_IOPEEN                 ((uint32_t)0x00000040)         /*!< I/O port E clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(36): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Adc1: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_ADC1EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2058): note: expanded from macro 'RCC_APB2ENR_ADC1EN'
+#define  RCC_APB2ENR_ADC1EN                  ((uint32_t)0x00000200)         /*!< ADC 1 interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(37): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Adc2: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_ADC2EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2061): note: expanded from macro 'RCC_APB2ENR_ADC2EN'
+#define  RCC_APB2ENR_ADC2EN                  ((uint32_t)0x00000400)         /*!< ADC 2 interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(38): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Spi1: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_SPI1EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2065): note: expanded from macro 'RCC_APB2ENR_SPI1EN'
+#define  RCC_APB2ENR_SPI1EN                  ((uint32_t)0x00001000)         /*!< SPI 1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(39): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim1: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_TIM1EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2064): note: expanded from macro 'RCC_APB2ENR_TIM1EN'
+#define  RCC_APB2ENR_TIM1EN                  ((uint32_t)0x00000800)         /*!< TIM1 Timer clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(40): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usart1: Rcc_MemoryBase->APB2ENR |= RCC_APB2ENR_USART1EN;               Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2066): note: expanded from macro 'RCC_APB2ENR_USART1EN'
+#define  RCC_APB2ENR_USART1EN                ((uint32_t)0x00004000)         /*!< USART1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(28): warning: 16 enumeration values not explicitly handled in switch: 'Rcc_Dma2', 'Rcc_Gpiof', 'Rcc_Fsmc'... [-Wswitch-enum]
+                switch(Peripheral)
+                       ^~~~~~~~~~
+Rcc.cpp(49): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim2: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_TIM2EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2097): note: expanded from macro 'RCC_APB1ENR_TIM2EN'
+#define  RCC_APB1ENR_TIM2EN                  ((uint32_t)0x00000001)        /*!< Timer 2 clock enabled*/
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(50): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim3: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_TIM3EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2098): note: expanded from macro 'RCC_APB1ENR_TIM3EN'
+#define  RCC_APB1ENR_TIM3EN                  ((uint32_t)0x00000002)        /*!< Timer 3 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(51): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim4: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_TIM4EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2111): note: expanded from macro 'RCC_APB1ENR_TIM4EN'
+ #define  RCC_APB1ENR_TIM4EN                 ((uint32_t)0x00000004)        /*!< Timer 4 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(52): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Wwd: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_WWDGEN;            Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2099): note: expanded from macro 'RCC_APB1ENR_WWDGEN'
+#define  RCC_APB1ENR_WWDGEN                  ((uint32_t)0x00000800)        /*!< Window Watchdog clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(53): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Spi2: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_SPI2EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2112): note: expanded from macro 'RCC_APB1ENR_SPI2EN'
+ #define  RCC_APB1ENR_SPI2EN                 ((uint32_t)0x00004000)        /*!< SPI 2 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(54): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usart2: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_USART2EN;               Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2100): note: expanded from macro 'RCC_APB1ENR_USART2EN'
+#define  RCC_APB1ENR_USART2EN                ((uint32_t)0x00020000)        /*!< USART 2 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(55): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usart3: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_USART3EN;               Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2113): note: expanded from macro 'RCC_APB1ENR_USART3EN'
+ #define  RCC_APB1ENR_USART3EN               ((uint32_t)0x00040000)        /*!< USART 3 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(56): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_I2c1: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_I2C1EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2101): note: expanded from macro 'RCC_APB1ENR_I2C1EN'
+#define  RCC_APB1ENR_I2C1EN                  ((uint32_t)0x00200000)        /*!< I2C 1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(57): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_I2c2: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_I2C2EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2114): note: expanded from macro 'RCC_APB1ENR_I2C2EN'
+ #define  RCC_APB1ENR_I2C2EN                 ((uint32_t)0x00400000)        /*!< I2C 2 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(58): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usb: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_USBEN;             Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2118): note: expanded from macro 'RCC_APB1ENR_USBEN'
+ #define  RCC_APB1ENR_USBEN                  ((uint32_t)0x00800000)        /*!< USB Device clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(59): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Can: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_CAN1EN;            Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2104): note: expanded from macro 'RCC_APB1ENR_CAN1EN'
+#define  RCC_APB1ENR_CAN1EN                  ((uint32_t)0x02000000)        /*!< CAN1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(60): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Bkp: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_BKPEN;             Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2107): note: expanded from macro 'RCC_APB1ENR_BKPEN'
+#define  RCC_APB1ENR_BKPEN                   ((uint32_t)0x08000000)        /*!< Backup interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(61): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Pwr: Rcc_MemoryBase->APB1ENR |= RCC_APB1ENR_PWREN;             Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2108): note: expanded from macro 'RCC_APB1ENR_PWREN'
+#define  RCC_APB1ENR_PWREN                   ((uint32_t)0x10000000)        /*!< Power interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(47): warning: 14 enumeration values not explicitly handled in switch: 'Rcc_Gpiob', 'Rcc_Flitf', 'Rcc_Gpiod'... [-Wswitch-enum]
+                switch(Peripheral)
+                       ^~~~~~~~~~
+Rcc.cpp(81): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Dma1: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_DMA1EN;            Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2027): note: expanded from macro 'RCC_AHBENR_DMA1EN'
+#define  RCC_AHBENR_DMA1EN                   ((uint16_t)0x0001)            /*!< DMA1 clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(81): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        case Rcc_Dma1: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_DMA1EN;            Error = Rcc_Ok;  break;
+                                                              ~~ ^~~~~~~~~~~~~~~~~~
+Rcc.cpp(82): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Sram: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_SRAMEN;            Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2028): note: expanded from macro 'RCC_AHBENR_SRAMEN'
+#define  RCC_AHBENR_SRAMEN                   ((uint16_t)0x0004)            /*!< SRAM interface clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(82): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        case Rcc_Sram: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_SRAMEN;            Error = Rcc_Ok;  break;
+                                                              ~~ ^~~~~~~~~~~~~~~~~~
+Rcc.cpp(83): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Flitf: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_FLITFEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2029): note: expanded from macro 'RCC_AHBENR_FLITFEN'
+#define  RCC_AHBENR_FLITFEN                  ((uint16_t)0x0010)            /*!< FLITF clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(83): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        case Rcc_Flitf: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_FLITFEN;          Error = Rcc_Ok;  break;
+                                                               ~~ ^~~~~~~~~~~~~~~~~~~
+Rcc.cpp(84): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Crc: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_CRCEN;              Error = Rcc_Ok;  break;
+                                                                 ^~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2030): note: expanded from macro 'RCC_AHBENR_CRCEN'
+#define  RCC_AHBENR_CRCEN                    ((uint16_t)0x0040)            /*!< CRC clock enable */
+                                              ^         ~~~~~~
+Rcc.cpp(84): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        case Rcc_Crc: Rcc_MemoryBase->AHBENR &= ~RCC_AHBENR_CRCEN;              Error = Rcc_Ok;  break;
+                                                             ~~ ^~~~~~~~~~~~~~~~~
+Rcc.cpp(79): warning: 23 enumeration values not explicitly handled in switch: 'Rcc_Dma2', 'Rcc_Gpiob', 'Rcc_Gpiod'... [-Wswitch-enum]
+                switch(Peripheral)
+                       ^~~~~~~~~~
+Rcc.cpp(93): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Afio: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_AFIOEN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2053): note: expanded from macro 'RCC_APB2ENR_AFIOEN'
+#define  RCC_APB2ENR_AFIOEN                  ((uint32_t)0x00000001)         /*!< Alternate Function I/O clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(94): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpioa: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_IOPAEN;         Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2054): note: expanded from macro 'RCC_APB2ENR_IOPAEN'
+#define  RCC_APB2ENR_IOPAEN                  ((uint32_t)0x00000004)         /*!< I/O port A clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(95): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpiob: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_IOPBEN;         Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2055): note: expanded from macro 'RCC_APB2ENR_IOPBEN'
+#define  RCC_APB2ENR_IOPBEN                  ((uint32_t)0x00000008)         /*!< I/O port B clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(96): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpioc: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_IOPCEN;         Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2056): note: expanded from macro 'RCC_APB2ENR_IOPCEN'
+#define  RCC_APB2ENR_IOPCEN                  ((uint32_t)0x00000010)         /*!< I/O port C clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(97): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpiod: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_IOPDEN;         Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2057): note: expanded from macro 'RCC_APB2ENR_IOPDEN'
+#define  RCC_APB2ENR_IOPDEN                  ((uint32_t)0x00000020)         /*!< I/O port D clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(98): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Gpioe: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_IOPEEN;         Error = Rcc_Ok;  break;
+                                                                    ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2075): note: expanded from macro 'RCC_APB2ENR_IOPEEN'
+ #define  RCC_APB2ENR_IOPEEN                 ((uint32_t)0x00000040)         /*!< I/O port E clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(99): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Adc1: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_ADC1EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2058): note: expanded from macro 'RCC_APB2ENR_ADC1EN'
+#define  RCC_APB2ENR_ADC1EN                  ((uint32_t)0x00000200)         /*!< ADC 1 interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(100): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Adc2: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_ADC2EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2061): note: expanded from macro 'RCC_APB2ENR_ADC2EN'
+#define  RCC_APB2ENR_ADC2EN                  ((uint32_t)0x00000400)         /*!< ADC 2 interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(101): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Spi1: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_SPI1EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2065): note: expanded from macro 'RCC_APB2ENR_SPI1EN'
+#define  RCC_APB2ENR_SPI1EN                  ((uint32_t)0x00001000)         /*!< SPI 1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(102): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim1: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_TIM1EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2064): note: expanded from macro 'RCC_APB2ENR_TIM1EN'
+#define  RCC_APB2ENR_TIM1EN                  ((uint32_t)0x00000800)         /*!< TIM1 Timer clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(103): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usart1: Rcc_MemoryBase->APB2ENR &= ~RCC_APB2ENR_USART1EN;              Error = Rcc_Ok;  break;
+                                                                     ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2066): note: expanded from macro 'RCC_APB2ENR_USART1EN'
+#define  RCC_APB2ENR_USART1EN                ((uint32_t)0x00004000)         /*!< USART1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(91): warning: 16 enumeration values not explicitly handled in switch: 'Rcc_Dma2', 'Rcc_Gpiof', 'Rcc_Fsmc'... [-Wswitch-enum]
+                switch(Peripheral)
+                       ^~~~~~~~~~
+Rcc.cpp(112): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim2: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_TIM2EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2097): note: expanded from macro 'RCC_APB1ENR_TIM2EN'
+#define  RCC_APB1ENR_TIM2EN                  ((uint32_t)0x00000001)        /*!< Timer 2 clock enabled*/
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(113): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim3: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_TIM3EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2098): note: expanded from macro 'RCC_APB1ENR_TIM3EN'
+#define  RCC_APB1ENR_TIM3EN                  ((uint32_t)0x00000002)        /*!< Timer 3 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(114): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Tim4: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_TIM4EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2111): note: expanded from macro 'RCC_APB1ENR_TIM4EN'
+ #define  RCC_APB1ENR_TIM4EN                 ((uint32_t)0x00000004)        /*!< Timer 4 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(115): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Wwd: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_WWDGEN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2099): note: expanded from macro 'RCC_APB1ENR_WWDGEN'
+#define  RCC_APB1ENR_WWDGEN                  ((uint32_t)0x00000800)        /*!< Window Watchdog clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(116): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Spi2: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_SPI2EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2112): note: expanded from macro 'RCC_APB1ENR_SPI2EN'
+ #define  RCC_APB1ENR_SPI2EN                 ((uint32_t)0x00004000)        /*!< SPI 2 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(117): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usart2: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_USART2EN;              Error = Rcc_Ok;  break;
+                                                                     ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2100): note: expanded from macro 'RCC_APB1ENR_USART2EN'
+#define  RCC_APB1ENR_USART2EN                ((uint32_t)0x00020000)        /*!< USART 2 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(118): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usart3: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_USART3EN;              Error = Rcc_Ok;  break;
+                                                                     ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2113): note: expanded from macro 'RCC_APB1ENR_USART3EN'
+ #define  RCC_APB1ENR_USART3EN               ((uint32_t)0x00040000)        /*!< USART 3 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(119): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_I2c1: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_I2C1EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2101): note: expanded from macro 'RCC_APB1ENR_I2C1EN'
+#define  RCC_APB1ENR_I2C1EN                  ((uint32_t)0x00200000)        /*!< I2C 1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(120): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_I2c2: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_I2C2EN;          Error = Rcc_Ok;  break;
+                                                                   ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2114): note: expanded from macro 'RCC_APB1ENR_I2C2EN'
+ #define  RCC_APB1ENR_I2C2EN                 ((uint32_t)0x00400000)        /*!< I2C 2 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(121): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Usb: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_USBEN;            Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2118): note: expanded from macro 'RCC_APB1ENR_USBEN'
+ #define  RCC_APB1ENR_USBEN                  ((uint32_t)0x00800000)        /*!< USB Device clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(122): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Can: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_CAN1EN;           Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2104): note: expanded from macro 'RCC_APB1ENR_CAN1EN'
+#define  RCC_APB1ENR_CAN1EN                  ((uint32_t)0x02000000)        /*!< CAN1 clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(123): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Bkp: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_BKPEN;            Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2107): note: expanded from macro 'RCC_APB1ENR_BKPEN'
+#define  RCC_APB1ENR_BKPEN                   ((uint32_t)0x08000000)        /*!< Backup interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(124): warning: use of old-style cast [-Wold-style-cast]
+                        case Rcc_Pwr: Rcc_MemoryBase->APB1ENR &= ~RCC_APB1ENR_PWREN;            Error = Rcc_Ok;  break;
+                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(2108): note: expanded from macro 'RCC_APB1ENR_PWREN'
+#define  RCC_APB1ENR_PWREN                   ((uint32_t)0x10000000)        /*!< Power interface clock enable */
+                                              ^         ~~~~~~~~~~
+Rcc.cpp(110): warning: 14 enumeration values not explicitly handled in switch: 'Rcc_Gpiob', 'Rcc_Flitf', 'Rcc_Gpiod'... [-Wswitch-enum]
+                switch(Peripheral)
+                       ^~~~~~~~~~
+Rcc.cpp(134): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+91 warnings generated.
+compiling Rcc.cpp...
+linking...
+Program Size: Code=1736 RO-data=268 RW-data=4 ZI-data=1632  
+".\Objects\FirstProject.axf" - 0 Error(s), 113 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_STM32F103C8
+  C:/Users/Mhmd/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Mhmd/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
